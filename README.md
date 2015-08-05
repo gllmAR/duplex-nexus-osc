@@ -10,15 +10,15 @@ In contrast to the OSC servers provided for Nexus UI it also broadcasts the curr
 
 2.  Download and unpack this [repository archive](https://github.com/triss/duplex-nexus-osc/archive/master.zip).
 
-    Or clone the repsoitory using git: 
+    Or clone the repsoitory using git:
 
     ``` git clone https://github.com/triss/duplex-nexus-osc.git ```
 
-3.  Move in to the folder you just created: 
+3.  Move in to the folder you just created:
 
     ```cd duplex-nexus-osc```
 
-4.  Install dependancies with node's package manager: 
+4.  Install dependancies with node's package manager:
 
     ``` npm install ```
 
@@ -42,12 +42,12 @@ http://<your-servers-ip-addresss>:8080
 
 Duplex Nexus OSC responds to the following OSC messages:
 
-Message           | Params              | Example 
+Message           | Params              | Example
 ------------------|---------------------|-----------------------------------------
-\nexus\create     | name type x y w h   | \nexus\create mySlider slider 0 0 25 100
-\nexus\update     | name property value | \nexus\update mySlider value 0.5
-\nexus\delete     | name                | \nexus\delete mySlider
-\nexus\osc_client | ip port             | \nexus\osc_client "127.0.0.1" 9999
+/nexus/create     | name type x y w h   | /nexus/create mySlider slider 0 0 25 100
+/nexus/update     | name property value | /nexus/update mySlider value 0.5
+/nexus/delete     | name                | /nexus/delete mySlider
+/nexus/osc_client | ip port             | /nexus/osc_client "127.0.0.1" 9999
 
 Valid Nexus widgets types include: dial, position, keyboard, button, toggle, slider, multislider, matrix, select, tilt, pixels, colors, joints, comment, message, number, and multitouch.
 
@@ -71,7 +71,7 @@ Some examples might be:
 /myColor/b 10
 ```
 
-## SuperCollider 
+## SuperCollider
 
 ### Installing the Extension
 
@@ -91,9 +91,9 @@ a = { |freq=200 amp=0.5| SinOsc.ar(freq) * amp }.play;
 // create an NxPosition (XY) widget on the default Duplex Nexus OSC server
 // by default widgets fill 100% of the screen
 z = NxPosition();
-z.action = { |nx| 
+z.action = { |nx|
     a.set(
-        \freq, \freq.asSpec.map(nx.x), 
+        \freq, \freq.asSpec.map(nx.x),
         \amp, nx.y
     )
 }
