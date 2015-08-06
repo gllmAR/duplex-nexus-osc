@@ -4,3 +4,7 @@
 
 npm-debug.log
 node_modules/
+
+
+### ds store
+.DS_Store
