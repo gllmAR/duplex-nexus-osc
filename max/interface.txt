@@ -1,0 +1,5 @@
+multi1 multislider 0 0 100 100;
+# slide1 slider 0 0 25 100;
+# slide2 slider 25 0 25 100;
+# slide3 slider 50 0 25 100;
+# slide4 slider 75 0 25 100;
