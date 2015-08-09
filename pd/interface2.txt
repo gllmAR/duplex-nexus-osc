@@ -1,0 +1,14 @@
+# multi1 multislider 0 0 100 100;
+slide1 slider 0 0 10 100;
+slide2 slider 10 0 10 100;
+slide3 slider 20 0 10 100;
+slide4 slider 30 0 10 100;
+toggle1 toggle 40 0 20 20;
+dial1 dial 40 20 20 20;
+button1 button 40 40 20 20;
+position1 position 40 60 20 20;
+keyboard1 keyboard 60 0 40 20;
+multislider1 multislider 60 20 40 20;
+matrix1 matrix 60 40 40 20;
+colors1 colors 60 60 40 20;
+joint1 joints 60 80 40 20;
