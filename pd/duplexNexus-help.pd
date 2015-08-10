@@ -1,6 +1,6 @@
-#N canvas 499 147 534 594 10;
-#X obj 189 101 text define interface;
-#X msg 192 74 write interface.txt;
+#N canvas 810 153 534 594 10;
+#X obj 162 102 text define interface;
+#X msg 174 67 write interface.txt;
 #X msg 158 47 read interface.txt;
 #X obj 29 137 until;
 #X obj 31 186 t f f;
@@ -100,7 +100,9 @@
 \, select \, tilt \, pixels \, colors \, joints \, comment \, message
 \, number \, and multitouch.;
 #X obj 59 455 pd-osc/oSend localhost 4444;
-#X obj 91 39 t b b;
+#X obj 31 32 t b b;
+#X msg 161 1 read interface2.txt;
+#X msg 177 21 write interface2.txt;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
 #X connect 3 0 5 0;
@@ -126,6 +128,7 @@
 #X connect 19 2 20 0;
 #X connect 20 0 26 0;
 #X connect 21 0 35 0;
+#X connect 22 0 21 0;
 #X connect 23 0 22 1;
 #X connect 24 0 22 0;
 #X connect 24 1 25 0;
@@ -144,3 +147,5 @@
 #X connect 33 3 28 0;
 #X connect 36 0 11 0;
 #X connect 36 1 2 0;
+#X connect 37 0 0 0;
+#X connect 38 0 0 0;
