@@ -1,4 +1,4 @@
-multi1 multislider 0 0 100 100;
+multi1 multitouch 0 0 100 100;
 # slide1 slider 0 0 25 100;
 # slide2 slider 25 0 25 100;
 # slide3 slider 50 0 25 100;
